@@ -1,10 +1,13 @@
 import { Module } from '@nestjs/common';
-import { ImportDocumentController } from './import-document.controller';
-import { ImportDocumentService } from './import-document.service';
+import { DocumentModule } from './document/document.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [],
-  controllers: [ImportDocumentController],
-  providers: [ImportDocumentService],
+  imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
+    DocumentModule,
+  ],
+  controllers: [],
+  providers: [],
 })
 export class ImportDocumentModule {}

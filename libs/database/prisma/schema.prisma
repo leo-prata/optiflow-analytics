@@ -1,5 +1,6 @@
 generator client {
   provider = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
 }
 
 datasource db {
@@ -34,6 +35,27 @@ model Project {
   user        User     @relation(fields: [userId], references: [id])
 
   @@map("projects")
+}
+
+model OptimizationResult {
+  id          String   @id @default(uuid())
+  filename    String
+  status      JobStatus @default(PENDING)
+
+  result      Json?
+  
+  logs        String?
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("optimization_results")
+}
+
+enum JobStatus {
+  PENDING
+  COMPLETED
+  FAILED
 }
 
 enum Role {
