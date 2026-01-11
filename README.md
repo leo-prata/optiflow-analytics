@@ -93,12 +93,6 @@ cp .env.example .env
 
 Edite o arquivo `.env` e preencha as variáveis com suas credenciais. 
 
-> **Importante:** 
-> - Use credenciais fortes e únicas
-> - Nunca commite o arquivo `.env` no Git
-> - Para ambientes Docker, use `postgres`, `rabbitmq` e `redis` como hosts
-> - Para desenvolvimento local, use `localhost`
-
 ### 3. Dê permissão ao script CLI
 
 ```bash
