@@ -44,11 +44,6 @@ O projeto foi desenvolvido utilizando uma arquitetura de **Microsserviços Orien
 
 ## Arquitetura
 
-O sistema segue os princípios **SOLID** e utiliza padrões de projeto como:
-- **Dependency Injection** (Injeção de Dependências)
-- **Repository Pattern** (Camada de Persistência)
-- **Event-Driven Architecture** (Arquitetura Orientada a Eventos)
-
 ### Microsserviços
 
 ```
@@ -189,17 +184,11 @@ O projeto possui testes unitários e de integração utilizando **Jest** com moc
 ### Executar todos os testes
 
 ```bash
-# Instale as dependências (primeira vez)
+# Instale as dependências locais
 npm install
 
-# Execute a suíte completa de testes
-npm test
-
-# Testes em modo watch (desenvolvimento)
-npm run test:watch
-
-# Cobertura de código
-npm run test:cov
+# Execute a suíte de testes
+npx jest
 ```
 
 ### Estrutura de Testes
