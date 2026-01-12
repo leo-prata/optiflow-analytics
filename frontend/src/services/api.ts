@@ -20,10 +20,20 @@ export const userApi = axios.create({
   headers: { 'Content-Type': 'application/json' },
 });
 
+export const importApi = axios.create({
+  baseURL: IMPORT_API_URL,
+});
+
 dashboardApi.interceptors.request.use((config) => {
   const token = localStorage.getItem('optiflow_token');
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
+  return config;
+});
+
+importApi.interceptors.request.use((config) => {
+  const token = localStorage.getItem('optiflow_token');
+  if (token) config.headers.Authorization = `Bearer ${token}`;
   return config;
 });
