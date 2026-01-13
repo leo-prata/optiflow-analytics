@@ -1,35 +1,28 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { authApi } from '../../services/api'; // Importa nossa API configurada
-import styles from './Login.module.css'; // Importa os estilos
+import { authApi } from '../../services/api';
+import styles from './Login.module.css';
 
 export function Login() {
   const navigate = useNavigate();
-  
-  // Estados para controlar o formulário
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Função chamada ao clicar em "Entrar"
   const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault(); // Evita recarregar a página
+    e.preventDefault();
     setError('');
     setLoading(true);
 
     try {
-      // Faz a requisição POST para http://localhost:3001/auth/login
       const response = await authApi.post('/auth/login', {
         email,
         password
       });
 
-      // Se der certo:
-      // 1. Salva o Token no navegador
       localStorage.setItem('optiflow_token', response.data.access_token);
       
-      // 2. Redireciona para o Dashboard
       navigate('/dashboard');
 
     } catch (err) {
