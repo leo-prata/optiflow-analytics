@@ -34,7 +34,7 @@
   border-radius: 6px;
   color: #fff;
   outline: none;
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-main);
 }
 
 .input:focus, .select:focus { border-color: var(--acid-lime); }

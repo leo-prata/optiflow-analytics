@@ -8,6 +8,8 @@
   --cyan: #00f0ff;
   --text-main: #ffffff;
   --text-muted: #666666;
+
+  --font-main: 'Inter', sans-serif;
 }
 
 * {
@@ -19,14 +21,14 @@
 body {
   background-color: #111;
   color: var(--text-main);
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-main);
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-main);
 }
 
-input, button, select {
+input, button, select, textarea {
   font-family: inherit;
 }

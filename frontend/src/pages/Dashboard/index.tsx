@@ -103,7 +103,7 @@ export function Dashboard() {
           </div>
           <div className={styles.cardTrend}>
             <Database size={14} style={{ color: COLORS.success }}/> 
-            <span style={{color: '#888', marginLeft: 5}}>Extraído do PostgreSQL</span>
+            <span style={{color: '#888', marginLeft: 5}}>De todos CSVs com sucesso</span>
           </div>
         </div>
 

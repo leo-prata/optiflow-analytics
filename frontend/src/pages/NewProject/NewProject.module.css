@@ -10,7 +10,7 @@
 
 .header { text-align: center; margin-bottom: 40px; }
 .label { color: var(--cyan); letter-spacing: 2px; font-size: 12px; font-weight: bold; text-transform: uppercase; }
-.title { font-family: 'Syne', sans-serif; font-size: 40px; margin-top: 10px; }
+.title { font-family: var(--font-main); font-size: 40px; margin-top: 10px; }
 
 .stepper { display: flex; justify-content: center; gap: 40px; margin-bottom: 60px; position: relative; }
 .stepLine { position: absolute; top: 15px; left: 50%; transform: translateX(-50%); width: 200px; height: 1px; background: #222; z-index: 0; }
@@ -46,7 +46,7 @@
 
 .selectBox {
   width: 100%; background: #000; border: 1px solid #333; color: #fff;
-  padding: 8px; border-radius: 4px; font-family: 'Space Mono'; font-size: 12px; outline: none;
+  padding: 8px; border-radius: 4px; font-family: var(--font-main); font-size: 12px; outline: none;
 }
 .selectBox:focus { border-color: var(--cyan); }
 
@@ -67,7 +67,7 @@
   width: 100%; max-width: 800px; overflow-x: auto; margin-bottom: 30px;
   border: 1px solid #333; border-radius: 8px; background: #0a0a0a;
 }
-.previewTable { width: 100%; border-collapse: collapse; font-size: 11px; font-family: 'Space Mono'; }
+.previewTable { width: 100%; border-collapse: collapse; font-size: 11px; font-family: var(--font-main); }
 .previewTable th { text-align: left; padding: 10px; color: var(--acid-lime); border-bottom: 1px solid #333; }
 .previewTable td { padding: 8px 10px; color: #ccc; border-bottom: 1px solid #222; white-space: nowrap; }
 .previewTable tr:last-child td { border-bottom: none; }
@@ -84,13 +84,13 @@
 
 .limitInput {
   width: 100px; background: #000; border: 1px solid var(--acid-lime); color: var(--acid-lime);
-  padding: 8px; border-radius: 4px; font-family: 'Space Mono'; font-size: 12px; outline: none;
+  padding: 8px; border-radius: 4px; font-family: var(--font-main); font-size: 12px; outline: none;
 }
 .limitInput::placeholder { color: #444; }
 
 .btnAction {
   padding: 12px 30px; background: #fff; color: #000; border: none;
-  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px;
+  font-family: var(--font-main); font-weight: 700; font-size: 14px;
   margin-top: 30px; cursor: pointer; border-radius: 6px; float: right;
 }
 .btnAction:hover { background: var(--acid-lime); }
