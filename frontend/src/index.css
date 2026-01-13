@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap');
 
 :root {
-  --bg-deep: #050505;
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --border-glass: rgba(255, 255, 255, 0.1);
-  --acid-lime: #ccff00;
-  --cyan: #00f0ff;
-  --text-main: #ffffff;
-  --text-muted: #666666;
+  --midnight-indigo: #212842;
+  --midnight-dark: #1B2036;
+  --vanilla-cream: #F0E7D5;
+  --wine-red: #8B3A3A;
+  --amber-brown: #C88D5D; 
+  --sage-green: #8DA399; 
+
+  --bg-deep: var(--midnight-dark);
+  --bg-card: var(--midnight-indigo);
+  --border-glass: rgba(240, 231, 213, 0.08);
+  --border-highlight: rgba(240, 231, 213, 0.2);
+  
+  --text-main: var(--vanilla-cream);
+  --text-muted: rgba(240, 231, 213, 0.5);
+  --text-inverse: var(--midnight-dark);
+
+  --acid-lime: var(--sage-green); 
+  --cyan: var(--vanilla-cream);
 
   --font-main: 'Inter', sans-serif;
 }

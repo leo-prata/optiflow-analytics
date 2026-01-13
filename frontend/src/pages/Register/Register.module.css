@@ -4,60 +4,73 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at center, rgba(255,255,255,0.02) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(33, 40, 66, 0.4) 0%, var(--bg-deep) 70%);
   background-color: var(--bg-deep);
 }
 
 .authCard {
   width: 450px;
   padding: 40px;
-  background: rgba(10, 10, 10, 0.95);
+  background: var(--bg-card);
   border: 1px solid var(--border-glass);
   border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 .header { text-align: center; margin-bottom: 30px; }
-.logoCircle { width: 40px; height: 40px; background: #fff; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; }
-.logoDot { width: 12px; height: 12px; background: #000; border-radius: 50%; }
-.title { font-size: 24px; margin-bottom: 5px; color: #fff; }
-.subtitle { font-size: 12px; color: #666; }
+.logoCircle { width: 48px; height: 48px; background: var(--vanilla-cream); border-radius: 50%; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px rgba(240, 231, 213, 0.15); }
+.logoDot { width: 14px; height: 14px; background: var(--midnight-indigo); border-radius: 50%; }
+.title { font-size: 24px; margin-bottom: 6px; color: var(--vanilla-cream); font-weight: 600; }
+.subtitle { font-size: 12px; color: var(--text-muted); letter-spacing: 0.5px; }
 
 .inputGroup { margin-bottom: 15px; }
-.label { display: block; font-size: 12px; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; }
+.label { display: block; font-size: 11px; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; }
 
 .input, .select {
   width: 100%;
-  padding: 12px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid #333;
-  border-radius: 6px;
-  color: #fff;
+  padding: 13px 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-glass);
+  border-radius: 8px;
+  color: var(--vanilla-cream);
   outline: none;
   font-family: var(--font-main);
+  font-size: 14px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus, .select:focus { border-color: var(--acid-lime); }
+.input:focus, .select:focus { 
+  border-color: var(--vanilla-cream);
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 0 0 3px rgba(240, 231, 213, 0.1);
+}
 
 .select option {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--midnight-indigo);
+    color: var(--vanilla-cream);
 }
 
 .button {
   width: 100%;
   margin-top: 15px;
-  padding: 12px;
-  background: var(--acid-lime);
-  color: #000;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--gold-champagne) 0%, var(--gold-champagne-soft) 100%);
+  color: #050505;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px var(--gold-champagne-glow);
 }
-.button:hover { opacity: 0.9; }
+.button:hover { 
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px var(--gold-champagne-glow);
+}
 
-.linkText { text-align: center; margin-top: 20px; font-size: 12px; color: #666; }
-.link { color: #fff; text-decoration: underline; cursor: pointer; border: none; background: none; font-size: 12px; font-family: inherit;}
-.errorMessage { color: #ff4d4d; font-size: 12px; text-align: center; margin-bottom: 15px; }
+.linkText { text-align: center; margin-top: 20px; font-size: 12px; color: var(--pearl-gray); }
+.link { color: var(--gold-champagne); text-decoration: none; cursor: pointer; border: none; background: none; font-size: 12px; font-family: inherit; font-weight: 600; transition: color 0.2s;}
+.link:hover { color: var(--gold-champagne-soft); text-decoration: underline; }
+.errorMessage { color: #D4955A; font-size: 12px; text-align: center; margin-bottom: 15px; padding: 10px; background: rgba(184, 115, 51, 0.08); border-radius: 6px; border: 1px solid rgba(184, 115, 51, 0.2); }

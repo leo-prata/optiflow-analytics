@@ -24,9 +24,9 @@ interface Project {
 }
 
 const COLORS = {
-  success: '#ccff00',
-  pending: '#00f0ff',
-  failed: '#ff4d4d',
+  success: '#dafa5aff',
+  pending: '#67f5ffff',
+  failed: '#fe7373ff',
   bg: '#111',
   grid: '#333'
 };

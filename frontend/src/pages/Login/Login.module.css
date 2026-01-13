@@ -4,17 +4,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at center, rgba(255,255,255,0.02) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(33, 40, 66, 0.4) 0%, var(--bg-deep) 70%);
   background-color: var(--bg-deep);
 }
 
 .authCard {
   width: 400px;
   padding: 40px;
-  background: rgba(10, 10, 10, 0.95);
+  background: var(--midnight-indigo);
   border: 1px solid var(--border-glass);
   border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 .header {
@@ -23,31 +23,35 @@
 }
 
 .logoCircle {
-  width: 40px;
-  height: 40px;
-  background: #fff;
+  width: 48px;
+  height: 48px;
+  background: var(--vanilla-cream);
   border-radius: 50%;
-  margin: 0 auto 20px;
+  margin: 0 auto 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 24px rgba(240, 231, 213, 0.15);
 }
 
 .logoDot {
-  width: 12px;
-  height: 12px;
-  background: #000;
+  width: 14px;
+  height: 14px;
+  background: var(--midnight-indigo);
   border-radius: 50%;
 }
 
 .title {
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  color: var(--vanilla-cream);
+  font-weight: 600;
 }
 
 .subtitle {
   font-size: 12px;
-  color: #666;
+  color: var(--pearl-gray);
+  letter-spacing: 0.5px;
 }
 
 .inputGroup {
@@ -56,52 +60,67 @@
 
 .label {
   display: block;
-  font-size: 12px;
-  color: var(--text-muted);
+  font-size: 11px;
+  color: var(--pearl-gray);
   margin-bottom: 8px;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .input {
   width: 100%;
-  padding: 12px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid #333;
-  border-radius: 6px;
-  color: #fff;
+  padding: 13px 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(229, 228, 226, 0.1);
+  border-radius: 8px;
+  color: var(--platinum);
   outline: none;
-  transition: border-color 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
 }
 
 .input:focus {
-  border-color: var(--acid-lime);
+  border-color: var(--gold-champagne);
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 0 0 3px var(--gold-champagne-glow);
 }
 
 .button {
   width: 100%;
   margin-top: 10px;
-  padding: 12px;
-  background: var(--acid-lime);
-  color: #000;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--gold-champagne) 0%, var(--gold-champagne-soft) 100%);
+  color: #050505;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px var(--gold-champagne-glow);
 }
 
 .button:hover {
-  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px var(--gold-champagne-glow);
 }
 
 .button:disabled {
-  background: #555;
+  background: rgba(139, 139, 139, 0.3);
   cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
 
 .errorMessage {
-  color: #ff4d4d;
+  color: #D4955A;
   font-size: 12px;
   text-align: center;
   margin-bottom: 15px;
+  padding: 10px;
+  background: rgba(184, 115, 51, 0.08);
+  border-radius: 6px;
+  border: 1px solid rgba(184, 115, 51, 0.2);
 }

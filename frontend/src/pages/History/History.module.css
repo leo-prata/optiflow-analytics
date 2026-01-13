@@ -1,13 +1,13 @@
 .container {
   padding: 40px;
-  color: #fff;
+  color: var(--text-main);
   animation: fadeIn 0.3s ease-out;
 }
 
 .header {
   display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;
 }
-.title { font-size: 28px; margin: 0; }
+.title { font-size: 28px; margin: 0; color: var(--vanilla-cream); }
 .subtitle { color: var(--text-muted); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
 
 .toolbar {
@@ -20,14 +20,14 @@
 .searchInput {
   width: 100%; padding: 12px 12px 12px 40px;
   background: var(--bg-card); border: 1px solid var(--border-glass);
-  color: #fff; border-radius: 8px; outline: none; font-size: 14px;
+  color: var(--text-main); border-radius: 8px; outline: none; font-size: 14px;
 }
-.searchInput:focus { border-color: var(--cyan); }
-.searchIcon { position: absolute; left: 12px; top: 12px; color: #666; }
+.searchInput:focus { border-color: var(--vanilla-cream); }
+.searchIcon { position: absolute; left: 12px; top: 12px; color: var(--text-muted); }
 
 .filterSelect {
   padding: 0 15px; background: var(--bg-card); border: 1px solid var(--border-glass);
-  color: #fff; border-radius: 8px; outline: none; cursor: pointer;
+  color: var(--text-main); border-radius: 8px; outline: none; cursor: pointer;
 }
 
 .tableContainer {
@@ -35,18 +35,18 @@
   border-radius: 12px; overflow: hidden;
 }
 .tableRow {
-  display: flex; padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);
-  align-items: center; font-size: 13px; color: #ccc; cursor: pointer; transition: background 0.2s;
+  display: flex; padding: 15px; border-bottom: 1px solid var(--border-glass);
+  align-items: center; font-size: 13px; color: var(--text-muted); cursor: pointer; transition: background 0.2s;
 }
-.tableRow:hover { background: rgba(255,255,255,0.03); }
-.tableHeader { background: rgba(0,0,0,0.2); color: #888; text-transform: uppercase; font-size: 11px; font-weight: bold; cursor: default;}
+.tableRow:hover { background: rgba(240, 231, 213, 0.05); }
+.tableHeader { background: rgba(0,0,0,0.2); color: var(--text-muted); text-transform: uppercase; font-size: 11px; font-weight: bold; cursor: default;}
 
 .statusBadge {
   padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; text-transform: uppercase;
   display: inline-flex; align-items: center; gap: 5px;
 }
-.success { color: var(--acid-lime); background: rgba(204,255,0,0.1); border: 1px solid rgba(204,255,0,0.2); }
-.failed { color: #ff4d4d; background: rgba(255,77,77,0.1); border: 1px solid rgba(255,77,77,0.2); }
-.pending { color: var(--cyan); background: rgba(0,240,255,0.1); border: 1px solid rgba(0,240,255,0.2); }
+.success { color: var(--sage-green); background: rgba(141, 163, 153, 0.1); border: 1px solid rgba(141, 163, 153, 0.2); }
+.failed { color: var(--wine-red); background: rgba(139, 58, 58, 0.1); border: 1px solid rgba(139, 58, 58, 0.2); }
+.pending { color: var(--amber-brown); background: rgba(200, 141, 93, 0.1); border: 1px solid rgba(200, 141, 93, 0.2); }
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
