@@ -1,0 +1,47 @@
+.container {
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.profileCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 100px; height: 100px;
+  background: #111; border: 2px solid var(--acid-lime);
+  border-radius: 50%; margin: 0 auto 20px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; font-weight: bold; color: var(--acid-lime);
+  box-shadow: 0 0 20px rgba(204,255,0,0.1);
+}
+
+.name { font-size: 24px; margin-bottom: 5px; }
+.roleTag { 
+  display: inline-block; padding: 4px 12px; background: rgba(0,240,255,0.1); 
+  color: var(--cyan); border-radius: 20px; font-size: 11px; text-transform: uppercase; 
+  font-weight: bold; margin-bottom: 30px; letter-spacing: 1px;
+}
+
+.infoGroup { text-align: left; margin-bottom: 20px; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 8px;}
+.label { display: block; font-size: 11px; color: #888; text-transform: uppercase; margin-bottom: 5px; }
+.value { font-size: 14px; color: #fff; font-family: 'Inter', sans-serif;}
+
+.logoutBtn {
+  margin-top: 20px; background: transparent; border: 1px solid #ff4d4d; color: #ff4d4d;
+  padding: 10px 20px; border-radius: 8px; cursor: pointer; transition: all 0.2s; width: 100%;
+}
+.logoutBtn:hover { background: #ff4d4d; color: #000; }

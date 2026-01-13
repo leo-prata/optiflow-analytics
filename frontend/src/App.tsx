@@ -4,6 +4,8 @@ import { Register } from './pages/Register';
 import { Dashboard } from './pages/Dashboard';
 import { NewProject } from './pages/NewProject';
 import { ProjectDetails } from './pages/ProjectDetails';
+import { History } from './pages/History';
+import { Profile } from './pages/Profile';
 import { PrivateLayout } from './layouts/PrivateLayout';
 import './App.css';
 
@@ -20,11 +22,10 @@ function App() {
           <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/new" element={<NewProject />} />
           
-          <Route path="/history" element={<h1 style={{color:'white', padding:40}}>Histórico (Em breve)</h1>} />
-          <Route path="/profile" element={<h1 style={{color:'white', padding:40}}>Perfil (Em breve)</h1>} />
+          <Route path="/history" element={<History />} />
+          <Route path="/profile" element={<Profile />} />
         </Route>
 
-        {/* Default */}
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
