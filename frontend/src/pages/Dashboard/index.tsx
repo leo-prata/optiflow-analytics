@@ -24,9 +24,9 @@ interface Project {
 }
 
 const COLORS = {
-  success: '#dafa5aff',
-  pending: '#67f5ffff',
-  failed: '#fe7373ff',
+  success: '#849349ff',
+  pending: '#9eced1ff',
+  failed: '#b74f36ff',
   bg: '#111',
   grid: '#333'
 };
@@ -90,7 +90,7 @@ export function Dashboard() {
       
       <header className={styles.header}>
         <div>
-          <span className={styles.subTitle}>ANÁLISE DE DADOS EM TEMPO REAL</span>
+          <span className={styles.subTitle}>ANÁLISE DOS DADOS GERAIS</span>
           <h1 className={styles.pageTitle}>Dashboard Analítico</h1>
         </div>
       </header>
@@ -103,7 +103,7 @@ export function Dashboard() {
           </div>
           <div className={styles.cardTrend}>
             <Database size={14} style={{ color: COLORS.success }}/> 
-            <span style={{color: '#888', marginLeft: 5}}>De todos CSVs com sucesso</span>
+            <span style={{color: '#F0E7D5', marginLeft: 5}}>De todos CSVs com sucesso</span>
           </div>
         </div>
 
@@ -114,7 +114,7 @@ export function Dashboard() {
           </div>
           <div className={styles.cardTrend}>
             <Activity size={14} style={{ color: COLORS.pending }}/>
-            <span style={{color: '#888', marginLeft: 5}}>Saúde do Sistema</span>
+            <span style={{color: '#F0E7D5', marginLeft: 5}}>Saúde do Sistema</span>
           </div>
         </div>
 
@@ -123,7 +123,7 @@ export function Dashboard() {
           <div className={styles.cardValue} style={{ color: '#fff' }}>{projects.length}</div>
           <div className={styles.cardTrend}>
             <Clock size={14} color="#fff"/>
-            <span style={{color: '#888', marginLeft: 5}}>Última atualização: Agora</span>
+            <span style={{color: '#F0E7D5', marginLeft: 5}}>Última atualização: Agora</span>
           </div>
         </div>
       </div>
@@ -183,7 +183,7 @@ export function Dashboard() {
       </div>
 
       <div className={styles.tableContainer}>
-        <div className={styles.tableHeader}>Log de Execuções (Banco de Dados)</div>
+        <div className={styles.tableHeader}>Log de Execuções</div>
         
         <div className={styles.listHeader}>
           <div className={styles.colId}>ID</div>

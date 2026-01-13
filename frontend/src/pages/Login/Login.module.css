@@ -86,33 +86,7 @@
   box-shadow: 0 0 0 3px var(--gold-champagne-glow);
 }
 
-.button {
-  width: 100%;
-  margin-top: 10px;
-  padding: 14px;
-  background: linear-gradient(135deg, var(--gold-champagne) 0%, var(--gold-champagne-soft) 100%);
-  color: #050505;
-  border: none;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 16px var(--gold-champagne-glow);
-}
 
-.button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px var(--gold-champagne-glow);
-}
-
-.button:disabled {
-  background: rgba(139, 139, 139, 0.3);
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
-}
 
 .errorMessage {
   color: #D4955A;
@@ -124,3 +98,10 @@
   border-radius: 6px;
   border: 1px solid rgba(184, 115, 51, 0.2);
 }
+
+.loginButton {
+  margin-top: 20px; border: 1px solid var(--midnight-indigo); background: var(--vanilla-cream); color: var(--midnight-indigo);
+  padding: 10px 20px; border-radius: 8px; cursor: pointer; transition: all 0.2s; width: 100%;
+}
+
+.loginButton:hover { color: #07081f; }

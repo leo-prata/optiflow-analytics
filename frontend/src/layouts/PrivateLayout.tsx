@@ -9,7 +9,7 @@ export function PrivateLayout() {
   }
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#050505' }}>
+    <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#1f2130ff' }}>
       <Sidebar />
 
       <div style={{ flex: 1, marginLeft: '80px' }}>

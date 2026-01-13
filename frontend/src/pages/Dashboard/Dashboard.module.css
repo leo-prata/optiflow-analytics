@@ -8,7 +8,7 @@
   display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;
 }
 .pageTitle { font-family: var(--font-main); font-size: 32px; font-weight: 700; line-height: 1; margin: 0; color: var(--vanilla-cream); }
-.subTitle { color: var(--text-muted); font-size: 12px; letter-spacing: 1px; display: block; margin-bottom: 8px; text-transform: uppercase;}
+.subTitle { color: var(--vanilla-cream); font-size: 12px; letter-spacing: 1px; display: block; margin-bottom: 8px; text-transform: uppercase;}
 
 .userProfile { display: flex; align-items: center; gap: 12px; background: rgba(240, 231, 213, 0.05); padding: 8px 16px; border-radius: 20px; border: 1px solid var(--border-glass); }
 .statusDot { width: 8px; height: 8px; background: var(--sage-green); border-radius: 50%; box-shadow: 0 0 5px var(--sage-green); opacity: 0.8; }
@@ -31,7 +31,7 @@
 }
 .card:hover { border-color: var(--vanilla-cream); transform: translateY(-2px); }
 
-.cardLabel { font-size: 12px; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; }
+.cardLabel { font-size: 12px; color: var(--vanilla-cream); margin-bottom: 12px; text-transform: uppercase; }
 .cardValue { font-family: var(--font-main); font-size: 36px; font-weight: 700; color: var(--vanilla-cream); margin-bottom: 8px; }
 .cardTrend { font-size: 12px; display: flex; align-items: center; gap: 5px; color: var(--sage-green); }
 
@@ -47,13 +47,13 @@
 
 .listHeader {
   display: flex; padding: 10px 15px; border-bottom: 1px solid var(--border-glass);
-  color: var(--text-muted); font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--vanilla-cream); font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
 }
 
 .dataRow {
   display: flex; align-items: center; padding: 16px 15px;
   border-bottom: 1px solid var(--border-glass);
-  font-size: 13px; color: var(--text-muted); transition: background 0.2s; cursor: pointer;
+  font-size: 13px; color: var(--vanilla-cream); transition: background 0.2s; cursor: pointer;
 }
 .dataRow:hover { background: rgba(240, 231, 213, 0.05); }
 
@@ -61,7 +61,7 @@
 .colName { width: 40%; color: var(--text-main); font-weight: bold; }
 .colStatus { width: 15%; }
 .colResult { width: 20%; color: var(--sage-green); text-align: right; font-family: var(--font-main); font-weight: bold; }
-.colDate { width: 15%; text-align: right; color: var(--text-muted); opacity: 0.7; }
+.colDate { width: 15%; text-align: right; color: var(--vanilla-cream); opacity: 0.7; }
 
 .tag { padding: 4px 8px; border-radius: 4px; font-size: 10px; border: 1px solid; text-transform: uppercase; font-weight: bold; display: inline-block; min-width: 80px; text-align: center;}
 .tagSuccess { border-color: var(--sage-green); color: var(--sage-green); background: rgba(141, 163, 153, 0.1); }

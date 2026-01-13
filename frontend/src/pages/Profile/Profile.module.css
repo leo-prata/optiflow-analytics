@@ -42,7 +42,7 @@
 .value { font-size: 14px; color: var(--text-main); font-family: 'Inter', sans-serif;}
 
 .logoutBtn {
-  margin-top: 20px; background: transparent; border: 1px solid var(--wine-red); color: var(--wine-red);
+  margin-top: 20px; border: 1px solid var(--wine-red); background: var(--wine-red); color: #fff;;
   padding: 10px 20px; border-radius: 8px; cursor: pointer; transition: all 0.2s; width: 100%;
 }
-.logoutBtn:hover { background: var(--wine-red); color: #fff; }
+.logoutBtn:hover { background: var(--wine-red); color: #adadad; }

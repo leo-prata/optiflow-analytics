@@ -78,7 +78,7 @@ export function Login() {
             />
           </div>
 
-          <button type="submit" className={styles.button} disabled={loading}>
+          <button type="submit" className={styles.loginButton} disabled={loading}>
             {loading ? 'Autenticando...' : 'Entrar'}
           </button>
         </form>
