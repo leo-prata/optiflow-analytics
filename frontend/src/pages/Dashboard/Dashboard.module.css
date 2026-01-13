@@ -1,0 +1,80 @@
+.container {
+  padding: 40px;
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.header {
+  display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;
+}
+.pageTitle { font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 700; line-height: 1; margin: 0; }
+.subTitle { color: var(--text-muted); font-size: 12px; letter-spacing: 1px; display: block; margin-bottom: 8px; text-transform: uppercase;}
+
+.userProfile { display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.05); padding: 8px 16px; border-radius: 20px; border: 1px solid var(--border-glass); }
+.statusDot { width: 8px; height: 8px; background: var(--acid-lime); border-radius: 50%; box-shadow: 0 0 10px var(--acid-lime); }
+.statusText { font-size: 10px; color: var(--acid-lime); font-weight: bold; letter-spacing: 1px; }
+
+.kpiGrid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 24px; margin-bottom: 30px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.card:hover { border-color: rgba(255,255,255,0.2); }
+
+.cardLabel { font-size: 12px; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; }
+.cardValue { font-family: 'Syne', sans-serif; font-size: 36px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.cardTrend { font-size: 12px; display: flex; align-items: center; gap: 5px; }
+
+.tableContainer {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: 24px;
+  min-height: 300px;
+}
+.tableHeader { display: flex; justify-content: space-between; margin-bottom: 20px; font-family: 'Syne', sans-serif; font-weight: 600; font-size: 18px; color: #fff;}
+
+.listHeader {
+  display: flex; padding: 10px 15px; border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #666; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+}
+
+.dataRow {
+  display: flex; align-items: center; padding: 16px 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 13px; color: #aaa; transition: background 0.2s; cursor: pointer;
+}
+.dataRow:hover { background: rgba(255,255,255,0.02); }
+
+.colId { width: 10%; color: var(--cyan); }
+.colName { width: 40%; color: #fff; font-weight: bold; }
+.colStatus { width: 15%; }
+.colResult { width: 20%; color: var(--acid-lime); text-align: right; font-family: 'Space Mono'; }
+.colDate { width: 15%; text-align: right; }
+
+.tag { padding: 4px 8px; border-radius: 4px; font-size: 10px; border: 1px solid; text-transform: uppercase; font-weight: bold; display: inline-block; min-width: 80px; text-align: center;}
+.tagSuccess { border-color: rgba(204, 255, 0, 0.3); color: var(--acid-lime); background: rgba(204, 255, 0, 0.05); }
+.tagPending { border-color: rgba(255, 255, 0, 0.3); color: #ffeb3b; background: rgba(255, 255, 0, 0.05); }
+.tagFailed { border-color: rgba(255, 0, 0, 0.3); color: #ff4d4d; background: rgba(255, 0, 0, 0.05); }
+
+.fab {
+  position: fixed; bottom: 40px; right: 40px;
+  background: var(--acid-lime); color: #000;
+  width: 60px; height: 60px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 20px rgba(204, 255, 0, 0.4);
+  cursor: pointer; border: none; transition: transform 0.2s; z-index: 100;
+}
+.fab:hover { transform: scale(1.1) rotate(90deg); }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }

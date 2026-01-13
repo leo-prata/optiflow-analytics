@@ -8,11 +8,13 @@ export class ResultsService {
   async findAll() {
     return this.prisma.optimizationResult.findMany({
       orderBy: { createdAt: 'desc' },
+      take: 20,
       select: {
         id: true,
         filename: true,
         status: true,
         createdAt: true,
+        result: true,
       }
     });
   }

@@ -1,0 +1,103 @@
+.container {
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  border-right: 1px solid var(--border-glass);
+  z-index: 50;
+}
+
+.logo {
+  width: 32px; height: 32px; 
+  background: #fff; 
+  border-radius: 50%; 
+  margin-bottom: 50px; 
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+.logoDot { width: 10px; height: 10px; background: #000; border-radius: 50%; }
+
+.navGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  align-items: center;
+}
+
+.navItem {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  color: #888;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.navItem:hover {
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+.active {
+  background: rgba(255,255,255,0.1);
+  color: var(--acid-lime);
+  border-color: rgba(255,255,255,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.navItem:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 60px;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+  border: 1px solid #333;
+  z-index: 100;
+  animation: fadeIn 0.2s;
+}
+
+.footer {
+  margin-top: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+.divider {
+  width: 40%;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+}
+
+.logoutBtn {
+  color: #ff4d4d;
+  background: rgba(255, 77, 77, 0.1);
+}
+.logoutBtn:hover {
+  background: rgba(255, 77, 77, 0.1);
+  color: #ff4d4d;
+  border-color: rgba(255, 77, 77, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-5px); }
+  to { opacity: 1; transform: translateX(0); }
+}
